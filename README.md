@@ -24,11 +24,11 @@ Aplikasi ini Saya buat menggunakan NextJs denga Typescript dan external API dari
 ### Dummy Data Auth
 Berikut ini merupakan beberapa data user yang dapat digunakan, karena untuk fungsi sign up  dari external API Fake Store tidak berfungsi.
 
-1. Data User 1
-Username : johnd \
+1. Data User 1\
+Username : johnd\
 Password : m38rmF$
 
-2. Data User 2
+2. Data User 2\
 Username : mor_2314\
 Password : 83r5^_
 
