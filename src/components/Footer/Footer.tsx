@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <div className="bg-[#1a145a] py-8">
       <Container>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="col-span-2">
             <Link href="/" className="flex justify-start items-center gap-2 mb-8">
               <Image src="/images/logo.png" alt="Logo" width={64} height={64} />

@@ -33,7 +33,7 @@ const ManCloth: React.FC = () => {
   return (
     <Container>
       <ContentTitle title="Pakaian Pria" description={`Pakaian pria total ${manClothDatas.length} item`} />
-      <div className="grid grid-cols-5 gap-7">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-7">
         {manClothDatas.map((cloths) => {
           const { id, title, price, image } = cloths;
 

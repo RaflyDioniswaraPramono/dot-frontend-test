@@ -33,7 +33,7 @@ const Products = () => {
   return (
     <Container>
       <ContentTitle title="Semua Produk" description={`Semua produk total ${productDatas.length} item`} />
-      <div className="grid grid-cols-5 gap-7">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-7">
         {productDatas.map((products) => {
           const { id, title, price, image } = products;
 

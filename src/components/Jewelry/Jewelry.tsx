@@ -33,7 +33,7 @@ const Jewelry: React.FC = () => {
   return (
     <Container>
       <ContentTitle title="Produk Elektronik" description={`Produk elektronik total ${jewelryDatas.length} item`} />
-      <div className="grid grid-cols-5 gap-7">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-7">
         {jewelryDatas.map((jewels) => {
           const { id, title, price, image } = jewels;
 

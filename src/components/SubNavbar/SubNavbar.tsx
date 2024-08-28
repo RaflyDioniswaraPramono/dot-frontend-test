@@ -12,7 +12,7 @@ const SubNavbar = () => {
       <Container>
         <div className="border-b border-zinc-300 pb-12">
           <p className="text-sm mb-4 text-zinc-500 font-semibold tracking-wide">Kategori Produk</p>
-          <div className="flex justify-between items-center gap-12">
+          <div className="grid grid-cols-2 lg:grid-cols-5 items-center gap-3 lg:gap-12">
             {subnavbarLinks.map((links) => {
               const { id, linkName, href, imageSrc, imageAlt } = links;
 
@@ -21,7 +21,7 @@ const SubNavbar = () => {
                   href={href}
                   key={id}
                   className={`${href === pathname ? "text-primary shadow-md" : "text-zinc-500 hover:text-primary hover:shadow-md"} border border-zinc-300 transition-colors duration-150 w-full flex flex-col justify-center items-center bg-white p-5 rounded-lg`}>
-                  <Image src={imageSrc} alt={imageAlt} width={64} height={64} className="mb-5" />
+                  <Image src={imageSrc} alt={imageAlt} width={64} height={64} className="mb-5 w-full h-auto max-w-12" />
                   <p className="text-sm text-center">{linkName}</p>
                 </Link>
               );
