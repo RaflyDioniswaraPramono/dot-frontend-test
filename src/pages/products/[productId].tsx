@@ -44,7 +44,7 @@ const DetailProduct: NextPageWithLayout = () => {
   return (
     <div>
       <Container>
-        <div className="grid grid-cols-3 items-center mb-12 shadow-md p-6 rounded-lg border">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center mb-12 shadow-md p-6 rounded-lg border">
           <div className="col-span-1 flex justify-center">
             <Image
               src={productData?.image || ""}
@@ -55,23 +55,23 @@ const DetailProduct: NextPageWithLayout = () => {
             />
           </div>
 
-          <div className="col-span-2">
-            <h1 className="text-xl font-bold tracking-wide mb-2">{productData?.title}</h1>
-            <p className="text-xs w-2/3 text-zinc-500 mb-6">{productData?.description}</p>
+          <div className="col-span-2 flex lg:block flex-col justify-center items-center">
+            <h1 className="text-xl font-bold tracking-wide mb-2 text-center lg:text-start">{productData?.title}</h1>
+            <p className="text-xs w-2/3 text-zinc-500 mb-6 text-center lg:text-start">{productData?.description}</p>
 
             <div className="mb-2">
-              <p className="mb-1 text-sm text-zinc-500">Harga Produk</p>
-              <p className="mb-1 text-sm font-medium">$ {productData?.price}</p>
+              <p className="mb-1 text-sm text-center lg:text-start text-zinc-500">Harga Produk</p>
+              <p className="mb-1 text-sm text-center lg:text-start font-medium">$ {productData?.price}</p>
             </div>
 
             <div className="mb-2">
-              <p className="mb-1 text-sm text-zinc-500">Kategori Produk</p>
-              <p className="mb-1 text-sm font-medium">{productData?.category}</p>
+              <p className="mb-1 text-sm text-center lg:text-start text-zinc-500">Kategori Produk</p>
+              <p className="mb-1 text-sm text-center lg:text-start font-medium">{productData?.category}</p>
             </div>
 
             <div className="mb-2">
-              <p className="mb-1 text-sm text-zinc-500">Rating</p>
-              <p className="mb-1 text-sm font-medium">
+              <p className="mb-1 text-sm text-center lg:text-start text-zinc-500">Rating</p>
+              <p className="mb-1 text-sm text-center lg:text-start font-medium">
                 {productData?.rating?.rate} / {productData?.rating?.count}
               </p>
             </div>
